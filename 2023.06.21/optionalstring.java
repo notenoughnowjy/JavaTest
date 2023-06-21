@@ -1,35 +1,22 @@
-/*
- * 부분 문자열의 개수
- * 
- * A와 B
- * 
- * B가 문자열 A의 부분 문자열로써 등장하는 횟수를 구하는 프로그램
- */
+import java.util.*;
 
-import java.util.Scanner;
-
-public class optionalstring {
-    public static int Max_N = 1000;
+public class optionalstring{
+    // public static int Max_N = 1000;
+    // public static int optionstr_N = 2;
+    public static int count = 0;
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        String[] allarr = new String[Max_N]; 
-        String optionarr;
-        int count = 0;
+        String[] allstr = new String[]{"b", "a", "n", "a", "n", "a"};
+        String optionstr = "na";
 
-        for(int i=0; i<1000;i++){
-            allarr[i] = sc.next();
+        for(int i=0; i<allstr.length; i++){
+            for(int j=i+1; j<allstr.length; j++){
+                String test = allstr[i] + allstr[j];
+                System.out.println(test);
+                if(test.equals(optionstr))
+                    count++;
+            }
         }
-        // for(int i=0;i<2;i++){
-        //     optionarr = sc.nextLine();
-        // }
-
-        // for(int i=0; i<allarr.length();i++){
-        //     if()
-        // }
-
-        for(int i=0; i<Max_N; i+=){
-            System.out.println(allarr[i]);;
-        }
-        
-    }   
+        System.out.println(count);
+    }
 }
