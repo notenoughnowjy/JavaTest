@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// 추상화
 abstract class Animal{
   public abstract String bark();
 }
@@ -28,14 +28,6 @@ class Cat extends Animal{
     return catCry;
   }
 }
-
-
-
-
-
-
-
-
 
 class Horse extends Animal{
   private String horseCry;
@@ -84,6 +76,7 @@ public class practiceabstract2{
   public static void main(String[] args){
     Scanner scanner = new Scanner(System.in);
 
+    // 추상화
     Dog dog = new Dog(scanner.next());
     String howdogcry = dog.bark();
 
@@ -94,6 +87,7 @@ public class practiceabstract2{
     Elephant elephant = new Elephant(scanner.next());
     String howelephantcry = elephant.bark();
 
+    // 다형성
     Fish fish = new Fish();
     Fish Dolpinsound = new Dolpin();
     Fish GoldFish = new GoldFish();
