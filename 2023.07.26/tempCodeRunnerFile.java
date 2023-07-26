@@ -1,2 +1,2 @@
-
-  public static void main(String[
+fy(String s) {
+    s = "apple";
