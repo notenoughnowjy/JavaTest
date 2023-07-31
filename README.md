@@ -43,5 +43,3 @@ public static int result = -1;
 }
 
 ```
-
-```
