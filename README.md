@@ -39,3 +39,30 @@ public class function_part_String_position{
   }
 }
 ```
+
+## [2023.08.01]
+- 재귀함수
+<p>https://www.codetree.ai/missions/5/problems/to-output-numerically/introduction</p>
+이 기본개념은 처음에는 이해되지 못했다. 하지만 재귀함수를 계속 호출함으로써 Stack에 쌓인 다음 종료조건을 만족한 후 Stack에서 출력되어 나온다는 것을 깨닫고는 이해하기 쉬웠다. 전공 지식의 중요성을 꺠달은 것 같은 느낌이었다.
+
+```java
+
+public class number_test{
+  public static void main(String[] args) {
+
+    int n = 3;
+
+    printStar(n);
+  }
+  public static void printStar(int n) {
+    if(n==0)
+      return;
+    
+    printStar(n-1);
+    for(int i=0; i<n; i++){
+      System.out.print("*");
+    }
+    System.out.println();
+  }
+}
+```
