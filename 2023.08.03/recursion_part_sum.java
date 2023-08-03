@@ -1,3 +1,4 @@
+// https://www.codetree.ai/missions/5/problems/square-of-each-digit/submissions
 import java.util.Scanner;
 
 public class recursion_part_sum {
