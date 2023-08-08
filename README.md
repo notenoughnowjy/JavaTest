@@ -41,6 +41,7 @@ public class function_part_String_position{
 ```
 
 ## [2023.08.01]
+
 - 재귀함수
 <p>https://www.codetree.ai/missions/5/problems/to-output-numerically/introduction</p>
 이 기본개념은 처음에는 이해되지 못했다. 하지만 재귀함수를 계속 호출함으로써 Stack에 쌓인 다음 종료조건을 만족한 후 Stack에서 출력되어 나온다는 것을 깨닫고는 이해하기 쉬웠다. 전공 지식의 중요성을 꺠달은 것 같은 느낌이었다.
@@ -57,12 +58,43 @@ public class number_test{
   public static void printStar(int n) {
     if(n==0)
       return;
-    
+
     printStar(n-1);
     for(int i=0; i<n; i++){
       System.out.print("*");
     }
     System.out.println();
+  }
+}
+```
+
+## [2023.08.08]
+
+- 값을 반환하는 재귀함수 / 재귀함수를 이용한 최댓값
+<p>https://www.codetree.ai/missions/5/problems/maximum-value-with-recursive-function/explanation</p>
+이 문제 또한 처음에 잘 이해하지 못했다. 하지만 재귀함수의 핵심은 Stack이었다는 것을 다시 한번 생각하고 차례로 Stack 값을 삽입하며 넣어보았을 때 비로소 이해가 되었다. 생각보다 쉬운 문제였고 이 문제를 직접 그려보면서 풀어본 덕분에 재귀함수에 대한 이해도가 한층 더 올라간 것 같다.
+
+```java
+// https://www.codetree.ai/missions/5/problems/maximum-value-with-recursive-function/explanation
+// 값을 반환하는 재귀함수 / 재귀함수를 이용한 최댓값
+import java.util.Scanner;
+
+public class recursion_max_value{
+  public static int Max_N = 100;
+  public static int[] arr = new int[Max_N];
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+
+    for(int i=0; i<n; i++)
+      arr[i] = sc.nextInt();
+      System.out.println(recursion_maxvalue(n-1));
+  }
+
+  private static int recursion_maxvalue(int n){
+    if(n == 0)
+      return arr[0];
+    return Math.max(recursion_maxvalue(n-1), arr[n]);
   }
 }
 ```
