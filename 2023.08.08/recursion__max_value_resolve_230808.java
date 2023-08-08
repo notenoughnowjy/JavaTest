@@ -1,3 +1,5 @@
+// https://www.codetree.ai/missions/5/problems/sum-of-large-numeric-digits/description
+// 값을 반환하는 재귀함수 / 큰 숫자 자리수의 합
 import java.util.Scanner;
 
 public class recursion__max_value_resolve_230808 {
