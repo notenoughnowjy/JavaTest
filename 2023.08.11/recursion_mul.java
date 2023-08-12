@@ -3,18 +3,18 @@
 import java.util.Scanner;
 
 public class recursion_mul {
-  public static int arr[];
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    arr = new int[n];
-    for(int i=0; i<n; i++)
-      arr[i] = sc.nextInt();
-    System.out.println(minimul_mltiple(n));
+   Scanner sc = new Scanner(System.in);
+   int n = sc.nextInt();
+   int arr[] = new int[n];
+
+   for(int i=0; i<n; i++){
+    arr[i] = sc.nextInt();
+   }
+   System.out.println(LCM(n, arr));
   }
 
-  private static int minimul_mltiple(int n) {
-    
-    return 1;
+  private static int LCM(int n, int[] arr) {
+    return -1;
   }
 }
