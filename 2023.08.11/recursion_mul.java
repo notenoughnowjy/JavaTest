@@ -3,18 +3,30 @@
 import java.util.Scanner;
 
 public class recursion_mul {
-  public static void main(String[] args) {
-   Scanner sc = new Scanner(System.in);
-   int n = sc.nextInt();
-   int arr[] = new int[n];
+    // 재귀 함수를 사용하여 최대공약수를 계산하는 함수
+    public static int gcd(int a, int b) {
+        if (b == 0)
+            return a;
+        return gcd(b, a % b);
+    }
 
-   for(int i=0; i<n; i++){
-    arr[i] = sc.nextInt();
-   }
-   System.out.println(LCM(n, arr));
-  }
+    // 재귀 함수를 사용하여 최소공배수를 계산하는 함수
+    public static int lcm(int[] arr, int n, int index) {
+        if (index == n - 1)
+            return arr[index];
+        
+        return (arr[index] * lcm(arr, n, index + 1)) / gcd(arr[index], lcm(arr, n, index + 1));
+    }
 
-  private static int LCM(int n, int[] arr) {
-    return -1;
-  }
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      int arr[] = new int[n];
+      for(int i=0; i<n; i++){
+        arr[i] = sc.nextInt();
+      }
+      int result = lcm(arr, n, 0); // 재귀함수를 호출하여 최소공배수 계산
+
+      System.out.println(result);
+    }
 }
