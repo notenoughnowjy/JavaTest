@@ -1,3 +1,5 @@
+// https://www.codetree.ai/missions/5/problems/compare-total-points/introduction
+// 정렬 기준이 복잡한 객체 정렬
 import java.util.Arrays;
 import java.util.Scanner;
 
