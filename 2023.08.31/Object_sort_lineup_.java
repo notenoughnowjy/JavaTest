@@ -14,19 +14,21 @@ class Student implements Comparable<Student>{
   }
   @Override
   public int compareTo(Student student) {
-    // 키가 크면 정렬 했을 때 앞으로
+    // 키가 크면 정렬 했을 때 앞으로(내림차순)
     if(this.height != student.height){
       return student.height - this.height;
     }
+    // 몸무게가 크면 정렬 했을 때 앞으로(내림차순)
     if(this.weight != student.weight){
       return student.weight - this.weight;
     }
+    // 번호가 작으면 앞으로(오름차순)
     return this.number - student.number;
   }
 
 }
 
-public class Object_sort_lineup {
+public class Object_sort_lineup_ {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     int student_number = scanner.nextInt();

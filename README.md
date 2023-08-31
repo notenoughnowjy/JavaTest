@@ -140,7 +140,7 @@ public class Main {
 }
 ```
 
-### 💡Note
+### 💡Note [2023.08.31]
 
 내림차순 - this.height - student.height
 
