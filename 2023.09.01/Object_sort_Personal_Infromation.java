@@ -16,7 +16,7 @@ class Person{
 public class Object_sort_Personal_Infromation{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int person_number = scanner.nextInt();
+        int person_number = 5;
         Person people[] = new Person[person_number];
 
         for(int i=0; i<person_number; i++){
@@ -39,7 +39,8 @@ public class Object_sort_Personal_Infromation{
         for(int i=0; i<person_number; i++){
             System.out.print(people[i].name + " ");
             System.out.print(people[i].height + " ");
-            System.out.print("%1.f\n" + people[i].weight);
+            System.out.print(people[i].weight);
+            System.out.println();
         }
         System.out.println();
 
@@ -55,7 +56,8 @@ public class Object_sort_Personal_Infromation{
         for (int i = 0; i<person_number; i++){
             System.out.print(people[i].name + " ");
             System.out.print(people[i].height + " ");
-            System.out.printf("%.1f\n" + people[i].weight);
+            System.out.print(people[i].weight);
+            System.out.println();
         }
     }
 }
