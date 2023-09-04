@@ -1,3 +1,5 @@
+// https://www.codetree.ai/missions/5/problems/indices-of-sorted-array/submissions
+// 객체 정렬 / 정렬된 숫자 위치 알아내기
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -17,7 +19,7 @@ class Number implements Comparable<Number>{
     return this.sequence - number.sequence;
   }
 }
-public class Object_sort_sorted_number_position {
+public class Object_sort_sorted_number_position_should_resolve {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     int n = scanner.nextInt();
