@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Date_Time_Calulation_basic {
+public class Date_Time_Calculation_basic {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     int hour = scanner.nextInt();
