@@ -20,7 +20,7 @@ class Student implements Comparable<Student>{
       return this.height - student.height;
     }
     // 몸무게가 더 큰 학생이 앞 = 내림차순 정렬
-    return student.height - this.height;
+    return student.weight - this.weight;
   }
 }
 

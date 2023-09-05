@@ -2,7 +2,7 @@
 // 날짜와 시간 계산 / Titme to Time
 import java.util.Scanner;
 
-public class Date_Time_Calculatio {
+public class Date_Time_Calculation {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     int hour1 = scanner.nextInt();
