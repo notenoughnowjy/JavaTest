@@ -12,11 +12,11 @@ public class Notation_2_basic {
         digits[cnt++] = n;
         break;
       }
-      
+      // 값 저장
       digits[cnt++] = n%2;
       n /= 2;
     }
-    for(int i= cnt-1; i>=0; i--){
+    for(int i=cnt-1; i>=0; i--){
       System.out.println(digits[i]);
     }
   }
