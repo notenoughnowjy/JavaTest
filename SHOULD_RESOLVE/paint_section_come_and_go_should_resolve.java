@@ -2,7 +2,7 @@
 // 왔다 갔던 구역 2
 
 import java.util.Scanner;
-public class paint_section_come_and_go {
+public class paint_section_come_and_go_should_resolve {
   public static int Max_N = 2000;
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
