@@ -3,7 +3,7 @@
 
   import java.util.Scanner;
 
-  public class paint_section_II_basic {
+  public class paint_section_II {
     public static int Max_N = 201;
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
