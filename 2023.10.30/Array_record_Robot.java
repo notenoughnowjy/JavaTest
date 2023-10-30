@@ -45,7 +45,24 @@ public class Array_record_Robot {
       }
     }
 
-    for(int i=1; i<posMax; i++){
+    if(posA < posB) {
+      for(int i = posA; i < posB; i++) {
+          A[i] = A[i - 1];
+      }
+  }
+  else if(posA > posB) {
+      for(int i = posB; i < posA; i++) {
+          B[i] = B[i - 1];
+      }
+  }
+
+    int timeMax = 0;
+    if(posA < posB)
+      timeMax = posB;
+    else
+      timeMax = posA;
+
+    for(int i=1; i<timeMax; i++){
       if(A[i] == B[i] && A[i-1] != B[i-1]){
         count++;
       }
