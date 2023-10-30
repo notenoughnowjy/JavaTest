@@ -45,6 +45,7 @@ public class Array_record_Robot {
       }
     }
 
+    // 계속 같은 위치
     if(posA < posB) {
       for(int i = posA; i < posB; i++) {
           A[i] = A[i - 1];
