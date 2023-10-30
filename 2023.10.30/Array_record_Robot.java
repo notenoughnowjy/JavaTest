@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class Array_record_Robot {
   private static int Max_N = 1000000;
-  private static int A[] = new int[Max_N];
-  private static int B[] = new int[Max_N];
-  private static int count, posA, posB = 0;
+  private static int A[] = new int[Max_N + 1];
+  private static int B[] = new int[Max_N + 1];
+  private static int count = 0, posA = 1, posB = 1;
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     int n = scanner.nextInt();
@@ -17,13 +17,15 @@ public class Array_record_Robot {
     for(int i=0; i<n; i++){
       int t = scanner.nextInt();
       char d = scanner.next().charAt(0);
+
       while(t-- > 0){
         if(d == 'L'){
-
+          A[posA] = A[posA - 1] - 1;
         }
-        else if(d == 'R'){
-
+        if(d == 'R'){
+          A[posA] = A[posA - 1] + 1;
         }
+        posA++;
       }
     }
 
@@ -31,16 +33,23 @@ public class Array_record_Robot {
     for(int i=0; i<m; i++){
       int t = scanner.nextInt();
       char d = scanner.next().charAt(0);
+
       while(t-- > 0){
         if(d == 'L'){
-
+          B[posB] = B[posB - 1] - 1;
         }
-        else if(d == 'R'){
-          
+        if(d == 'R'){
+          B[posB] = B[posB - 1] + 1;
         }
+        posB++;
       }
     }
 
+    for(int i=1; i<posMax; i++){
+      if(A[i] == B[i] && A[i-1] != B[i-1]){
+        count++;
+      }
+    }
     System.out.println(count);
   }
 }
