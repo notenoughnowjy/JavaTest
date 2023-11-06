@@ -12,6 +12,9 @@ class Person{
         this.height = height;
         this.weight = weight;
     }
+
+    public Person(int t, int x, int y) {
+    }
 }
 public class Object_sort_Personal_Infromation{
     public static void main(String[] args) {
