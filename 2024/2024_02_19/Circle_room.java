@@ -15,7 +15,7 @@ public class Circle_room {
         for(int i=0; i<n; i++){
             int temp = 0;
             for(int j=0; j<n; j++){
-                temp += (rooms[j] * Math.abs(j - i));
+                temp += (rooms[j] * Math.abs((j - i + n) % n));
             }
             result = Math.min(result, temp);
         }
