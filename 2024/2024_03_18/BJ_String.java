@@ -12,7 +12,8 @@ public class BJ_String {
             bw.write(Output_1_Last(s));
             bw.newLine();
         }
-         bw.flush();
+        bw.flush();
+        bw.close();
     }
 
     private static String Output_1_Last(String s) {
