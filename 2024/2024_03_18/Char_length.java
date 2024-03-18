@@ -10,5 +10,6 @@ public class Char_length {
         String result = Integer.toString(s.length());
         bw.write(result);
         bw.flush();
+        bw.close();
     }
 }
