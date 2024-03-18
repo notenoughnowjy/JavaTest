@@ -7,5 +7,6 @@ public class ASCII_Code{
         char c = br.readLine().charAt(0);
         bw.write(Integer.toString((int)c));
         bw.flush();
+        bw.close();
     }
 }
